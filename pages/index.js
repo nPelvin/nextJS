@@ -13,17 +13,17 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to my Tech Test!</h1>
+        <h1 className={styles.title}>Nigel Pelvin / FT</h1>
 
         <p className={styles.description}>
-          Click &quot;View Project&quot; below to see it in action.
+          Click &quot;View Project&quot; to see tech test in action.
         </p>
 
         <div className={styles.grid}>
           <Link href="ft/">
             <a className={styles.card}>
               <h2>View Project &rarr;</h2>
-              <p>Click to view project.</p>
+              <p>Click to view project</p>
             </a>
           </Link>
 
@@ -32,23 +32,15 @@ export default function Home() {
               className={styles.card}
             >
               <h2>ReadMe &rarr;</h2>
-              <p>Learn about my thought process!</p>
+              <p>View readme</p>
             </a>
 
-          {/* <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a> */}
-
           <a
-            href="https://github.com/nPelvin/nextJS/blob/main/README.md"
+            href="https://github.com/nPelvin/nextJS"
             className={styles.card}
           >
             <h2>GitHub &rarr;</h2>
-            <p>View Repository for Tech Test.</p>
+            <p>View repository</p>
           </a>
         </div>
       </main>
