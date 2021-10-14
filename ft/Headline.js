@@ -2,13 +2,10 @@ import React from "react";
 
 function Headline({ apiData }) {
 	return (
-		<div>
+		<div className="headline">
 			{apiData
 				? apiData.results[0].results.map((x, index) => (
 						<div key={index}>
-							{/* {x.images.length > 0 ? (
-								<img src={x.images[0].url} alt="News" />
-							) : null} */}
 							<h3>{x.title.title}</h3>
 							{/* Initial:{x.lifecycle.initialPublishDateTime}<br />
 							Last:{x.lifecycle.lastPublishDateTime} */}

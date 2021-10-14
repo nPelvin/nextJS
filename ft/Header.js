@@ -35,43 +35,15 @@ function Header({
         <div className="o-header__row o-header__top">
           <div className="o-header__container">
             <div className="o-header__top-wrapper">
-              {/* <div className="o-header__top-column o-header__top-column--left">
-								<a
-									href="#o-header-search"
-									className="o-header__top-link o-header__top-link--search"
-									aria-controls="o-header-search"
-									title="Open search bar"
-								>
-									<span className="o-header__top-link-label">
-										Open search bar
-									</span>
-								</a>
-							</div> */}
-
               <div className="o-header__top-column o-header__top-column--center">
-                {/* <!--<div className="o-header__top-takeover"></div>--> */}
                 <Link href="/">
                   <a
                     className="o-header__top-logo"
                     title="Go to Financial Times homepage"
                   >
-                    {/* <span className="o-header__visually-hidden">
-											Financial Times
-										</span> */}
                   </a>
                 </Link>
               </div>
-
-              {/* <div className="o-header__top-column o-header__top-column--right"> */}
-              {/* <!--<div className="o-header__top-takeover"></div>--> */}
-              {/* <a
-									className="o-header__top-link o-header__top-link--myft"
-									href="/myft"
-									aria-label="My F T"
-								>
-									<span className="o-header__visually-hidden">myFT</span>
-								</a>
-							</div> */}
             </div>
           </div>
         </div>
@@ -90,7 +62,6 @@ function Header({
               aria-label="Site search"
             >
               <label
-                // className="o-header__visually-hidden"
                 htmlFor="o-header-search-term-js"
                 id="o-header-search-term-js-label"
               >
@@ -104,8 +75,6 @@ function Header({
                 />{" "}
               </label>
               <button
-                // className="o-header__search-submit"
-                // type="submit"
                 onClick={handleSubmit}
               >
                 &gt; Search
@@ -134,24 +103,6 @@ function Header({
         data-o-header-drawer--no-js
       >
         <div className="o-header__drawer-inner">
-          {/* <div className="o-header__drawer-tools"> */}
-          {/* <a className="o-header__drawer-tools-logo" href="/">
-								<span className="o-header__visually-hidden">
-									Financial Times
-								</span>
-							</a> */}
-          {/* <button
-								type="button"
-								className="o-header__drawer-tools-close"
-								aria-controls="o-header-drawer"
-								title="Close drawer menu"
-							>
-								<span className="o-header__visually-hidden">
-									Close drawer menu
-								</span>
-							</button> */}
-          {/* <p className="o-header__drawer-current-edition">UK Edition</p> */}
-          {/* </div> */}
 
           <div className="o-header__drawer-search search-span">
             <form
@@ -194,13 +145,6 @@ function Header({
           </div>
         </div>
       </div>
-      {/* <span className="startingPagination">
-            can be removed later
-				Results returned: {resultsReturned}, Page:{" "}
-				{(maxResults + offset) / maxResults}/
-				{Math.ceil(resultsReturned / maxResults)}
-			</span> */}
-      {/* <PaginationSmall page={page} /> */}
     </div>
   );
 }

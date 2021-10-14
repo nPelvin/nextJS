@@ -9,6 +9,11 @@
 .search-span {
 	display: block;
 	justify-content: center;
+	border: none;
+}
+
+.headline {
+	padding: 0 1rem;
 }
 
 .header {

@@ -12,7 +12,7 @@ function PaginationSmall({
 	maxResults,
 	page,
 	searchTerm,
-    setPage
+  setPage
 }) {
 	const [currentPagination, setCurrentPagination] = useState([
 		1, 2, 3, 4, 5, 6, 7,
