@@ -27,29 +27,28 @@ export default function Home() {
             </a>
           </Link>
 
-          <Link href="ft/">
-            <a className={styles.card}>
-              <h2>View ReadMe &rarr;</h2>
+            <a
+              href="https://github.com/nPelvin/nextJS/blob/main/README.md"
+              className={styles.card}
+            >
+              <h2>ReadMe &rarr;</h2>
               <p>Learn about my thought process!</p>
             </a>
-          </Link>
 
-          <a
+          {/* <a
             href="https://github.com/vercel/next.js/tree/master/examples"
             className={styles.card}
           >
             <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          </a> */}
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://github.com/nPelvin/nextJS/blob/main/README.md"
             className={styles.card}
           >
-            <h2>View on Heroku &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h2>GitHub &rarr;</h2>
+            <p>View Repository for Tech Test.</p>
           </a>
         </div>
       </main>

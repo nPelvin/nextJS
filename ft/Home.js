@@ -4,7 +4,7 @@ import Script from "next/script";
 
 export function Home() {
 	const [searchTerm, setSearchTerm] = useState(null);
-	const [apiData, setApiData] = useState("");
+	const [apiData, setApiData] = useState("Loading");
 	//pagination variables
 	const [offset, setOffset] = useState(0);
 	const [maxResults, setMaxResults] = useState(100);
@@ -72,18 +72,11 @@ export function Home() {
         page={page}
         setPage={setPage}
       />
-      {/* <header className="header"></header> */}
       <div className="o-colors-page-background o-grid-container o-typography-wrapper">
-        {/* <Search
-					apiData={apiData}
-					setApiData={setApiData}
-					searchTerm={searchTerm}
-					setSearchTerm={setSearchTerm}
-				/> */}
-        {/* <Link to="/about/this/site">About</Link> */}
+ 
       </div>
       <>
-        {/* <Script src="https://www.ft.com/__origami/service/build/v3/bundles/js?components=o-grid@^6.0.0,o-normalise@^3.0.0,o-fonts@^5.0.0,o-header@^9.0.3,o-table@^9.0.2,o-autoinit@^3.0.0&system_code=origami" /> */}
+        <Script src="https://www.ft.com/__origami/service/build/v3/bundles/js?components=o-grid@^6.0.0,o-normalise@^3.0.0,o-fonts@^5.0.0,o-table@^9.0.2,o-autoinit@^3.0.0&system_code=origami" />
       </>
     </main>
   );

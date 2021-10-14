@@ -6,6 +6,12 @@
 	justify-content: center;
 }
 
+.loading {
+	margin: auto;
+	text-align:center;
+	min-height: 70vh;
+}
+
 .search-span {
 	display: block;
 	justify-content: center;

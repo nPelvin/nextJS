@@ -62,7 +62,8 @@ This was only my 2nd time using NextJS, so it also presented a few errors when t
 ## What Next?
 
 Wishlist of things I would have liked to add if I had more time:
-Testing - still learning...
-Smoother resizing on search bar - when implementing this origami component it lost some of its smooth horizontal responsiveness, given more time I would investigate why or make it smoother.
-Arrows on pagination for next/previous page
-Loading when results loading
+
+- Testing - still learning and this is my next goal.
+
+- Smoother resizing on search bar - when implementing this origami component it lost some of its smooth horizontal responsiveness, given more time I would investigate why or failing that make it smoother, possibly with something like Sass.
+
