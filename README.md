@@ -66,5 +66,5 @@ Wishlist of things I would have liked to add if I had more time:
 
 - Ability to change number of headlines rendered per page. This would be relatively easy to implement I believe.
 
-## Thanks for taking the time to look through my test :)
+## Thanks for taking the time to read
 
