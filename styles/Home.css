@@ -1,0 +1,58 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.o-buttons-pagination {
+	justify-content: center;
+}
+
+.search-span {
+	display: block;
+	justify-content: center;
+}
+
+.header {
+	background-color: #33302e;
+	height: 39px;
+}
+
+.search-row {
+	margin: 2rem;
+}
+
+.submit {
+	padding: 0.25rem 0.5rem;
+}
+
+.headlines {
+	margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+	.search-span {
+		margin: auto;
+		width: 80%;
+	}
+}
+@media only screen and (min-width: 920px) {
+	.search-span {
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	.search-span {
+		width: 60%;
+		margin: auto;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.search-span {
+		width: 50%;
+		margin: auto;
+	}
+}
+.js-focus-visible {
+	background-color: #fff1e5
+}
