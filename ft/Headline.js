@@ -23,7 +23,6 @@ function Headline({ apiData }) {
           <br />
         </div>
       )}
-      {/* {apiData ? console.log(apiData.results[0].results) : null} */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PaginationSmall from "../ft/PaginationSmall";
+import Pagination from "./Pagination";
 import Script from "next/script";
 
 export function Home() {
@@ -50,7 +50,6 @@ export function Home() {
 			})
 			.then((body) => {
 				setApiData(body);
-				console.log(body);
 				setResultsReturned(body.results[0].indexCount);
 			})
 			.catch((err) => {
@@ -60,7 +59,7 @@ export function Home() {
 
 	return (
     <main role="main" className="o-colors-page-background">
-      <PaginationSmall
+      <Pagination
         apiData={apiData}
         setApiData={setApiData}
         searchTerm={searchTerm}
