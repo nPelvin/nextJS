@@ -30,30 +30,38 @@ The three options I settled on were:
 ● Have pagination 
 ● Uses​ ​Origami​ Components 
 
-Heroku I was relatively comfortable with. Pagination and Origami I hadn't done before.
+Heroku I was comfortable with. Pagination and Origami I hadn't done before.
 
 ## Selecting a framework
 
-With my key features set, I had to decide on what technology to create the app with. The "server rendered" criteria was the main driver in this decision. 
+With my key features set, I had to decide on what technology to create the app with. The "server rendered" criteria, and time constraints were the main drivers in the decision. 
 
-I am very comfortable with React, but as this is considered primarily client-side rendering I felt it wouldn't meet the first criteria. I decided to pivot to NextJs instead. As NextJs is pre-rendered/server-rendered, I thought it would be suitable. I had used NextJs once before, and I considered it a good opportunity to further cement my learning. Vanilla Javascript would've been another good option, but ultimately I felt this might have taken a bit longer and was keeping in mind the time restraints. 
+I am very comfortable with React, but as this is considered primarily client-side rendering I felt it wouldn't meet the first criteria. I opted for NextJs as an alternative. As NextJs is pre-rendered /server-rendered, I thought it would be suitable. I had used NextJs once before, and I considered it a good opportunity to further cement my learning. Vanilla Javascript would've been another good option, but ultimately I felt this might have taken a bit longer to complete. 
+
+## Assumptions
+
+The main assumptions I made in creating the app are:
+
+- Site only needs to render headlines at a minimum and not other details
+- NextJS fulfills server rendered criteria
+- API limits results returned to 40 pages of 100 results (discussed further below)
 
 ## Challenges / Learnings
 
-- Pagination Logic
+- Pagination Logic:
 I decided to create the pagination logic myself, rather then just googling for a solution as this would provide the best learning opportunity. I listed out the 7 positions for each button and then ran through what number/symbol each position could be. (Arrows for next and previous were added later). 
 E.g.    Position 1 = ALWAYS 1
         Position 2 = 2 or "."
-        Position 3 = 3 or "." or (currentPage-1)
+        Position 3 = 3 or "." or (currentPage-1) etc...
 This helped me to arrive at an algorithm that I was happy with, and most importantly - worked well.
 
-- Pagination API Limits
+- Pagination API Limits:
 Once pagination was starting to work I noticed that api calls to the higher pages wouldn't work. After debugging I discovered that the API wouldn't work past the 40th page, no matter the search term. I couldn't find anything about this in the docs, and in real life this is something I would likely discuss with a more senior engineer. But as I assumed it to be a hardcoded API limit I therefore had to add a max 40 pages to the pagination algorithm.
 
-- Origami
+- Origami:
 Origami was fun to learn. I settled on a header to make it look more like an FT product. I had to simplify the header as most of the components weren't needed, but after using Carbon Design system previously, I found origami quite nice to work with and believe it meshed nicely. I also used Origami for the pagination buttons, background and font.
 
-- NextJS
+- NextJS:
 This was only my 2nd time using NextJS, and subsequently ran into a few errors when trying "yarn build". Reading through the docs, the cause was due to some of my components being in the "pages" folder. Moving the entire components folder to root/ft fixed this issue.
 
 ## What Next?
@@ -62,10 +70,9 @@ Wishlist of things I would have liked to add if I had more time:
 
 - Smoother resizing on search bar - when implementing this origami component it lost some of its smooth horizontal responsiveness, given more time I would investigate why or failing that make it smoother, possibly with something like Sass.
 
-- Ability to change number of headlines rendered per page. This would be relatively easy to implement I believe.
+- Ability to change number of headlines rendered per page - Though I haven't looked too deeply into the API docs for this, I believe it would be relatively easy to implement.
 
-- Testing - I'm still learning and this would've been a nice stretch goal for me.
-
+- Testing - I'm still learning and this would've been a really nice stretch goal for me.
 
 ## Thanks for taking the time to read
 
