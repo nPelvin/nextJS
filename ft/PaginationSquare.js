@@ -1,8 +1,34 @@
 import React from 'react';
 
-function PaginationSquare({ page, arrayIndex, setOffset, setPage, maxResults, currentPagination }) {
-
+function PaginationSquare({ page, arrayIndex, offset, setOffset, setPage, maxResults, currentPagination }) {
 	if (
+    arrayIndex == "<"
+  ) {
+    return (
+      <button
+        onClick={() => {
+          setOffset(offset - maxResults);
+          setPage(page-1);
+        }}
+        className="o-buttons o-buttons--secondary"
+      >
+        {arrayIndex}
+      </button>
+    );}
+
+	else if (arrayIndex == ">") {
+    return (
+      <button
+        onClick={() => {
+          setOffset(offset + maxResults);
+          setPage(page + 1);
+        }}
+        className="o-buttons o-buttons--secondary"
+      >
+        {arrayIndex}
+      </button>
+    );
+  } else if (
     currentPagination[arrayIndex] < 1 ||
     currentPagination[arrayIndex] == "."
   ) {

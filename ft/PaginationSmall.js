@@ -92,6 +92,17 @@ function PaginationSmall({
         >
           <span className="o-buttons-icon__label">Fewer results</span>
         </a>
+        {page > 1 ? (
+          <PaginationSquare
+            page={page}
+            arrayIndex={"<"}
+            setOffset={setOffset}
+            offset={offset}
+            setPage={setPage}
+            maxResults={maxResults}
+            currentPagination={currentPagination}
+          />
+        ) : null}
         <PaginationSquare
           page={page}
           arrayIndex={0}
@@ -148,6 +159,17 @@ function PaginationSmall({
           maxResults={maxResults}
           currentPagination={currentPagination}
         />
+        {page < 40 ? (
+          <PaginationSquare
+            page={page}
+            arrayIndex={">"}
+            setOffset={setOffset}
+            offset={offset}
+            setPage={setPage}
+            maxResults={maxResults}
+            currentPagination={currentPagination}
+          />
+        ) : null}
 
         <a
           href="#"
@@ -164,6 +186,17 @@ function PaginationSmall({
       <br className="demo-break" />
       <Headline apiData={apiData} />
       <div className="o-buttons-pagination pagination">
+        {page > 1 ? (
+          <PaginationSquare
+            page={page}
+            arrayIndex={"<"}
+            setOffset={setOffset}
+            offset={offset}
+            setPage={setPage}
+            maxResults={maxResults}
+            currentPagination={currentPagination}
+          />
+        ) : null}
         <PaginationSquare
           page={page}
           arrayIndex={0}
@@ -220,6 +253,17 @@ function PaginationSmall({
           maxResults={maxResults}
           currentPagination={currentPagination}
         />
+        {page < 40 ? (
+          <PaginationSquare
+            page={page}
+            arrayIndex={">"}
+            setOffset={setOffset}
+            offset={offset}
+            setPage={setPage}
+            maxResults={maxResults}
+            currentPagination={currentPagination}
+          />
+        ) : null}
       </div>
     </div>
   );
