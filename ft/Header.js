@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import Headline from "./Headline";
-import PaginationSmall from "./PaginationSmall";
+import Headline from "../ft/Headline";
+import PaginationSmall from "../ft/PaginationSmall";
 
 function Header({
 	apiData,

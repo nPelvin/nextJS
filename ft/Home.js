@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import PaginationSmall from "./PaginationSmall";
+import PaginationSmall from "../ft/PaginationSmall";
 import Script from "next/script";
 
 export function Home() {

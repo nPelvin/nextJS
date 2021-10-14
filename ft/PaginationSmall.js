@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Headline from "./Headline";
-import PaginationSquare from "./PaginationSquare";
+import PaginationSquare from "../ft/PaginationSquare";
 
 function PaginationSmall({
 	apiData,
@@ -24,7 +24,7 @@ function PaginationSmall({
 			? answer.push(2, 3, 4, 5, 6, 7)
 			: answer.push(".");
 		//less than 7 pages - no dots
-        maxPages > 40 ? maxPages = 40 : null;
+    maxPages > 40 ? maxPages = 40 : null;
 		maxPages < 8 ? (answer = [1, 2, 3, 4, 5, 6, 7]) : null;
 		maxPages < 8 ? answer.splice(maxPages) : null;
 		//greater than 7 pages dot at P2 and P6
