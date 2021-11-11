@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>FT Tech Project</title>
         <link
           rel="stylesheet"
